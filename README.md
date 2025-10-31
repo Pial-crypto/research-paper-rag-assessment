@@ -411,3 +411,34 @@ Remember: We're not looking for perfection - we're looking for potential, clear 
 **Ready? Fork and start building!** 🚀
 
 ---
+
+
+
+
+
+
+
+
+# Research Paper Assistant — RAG System
+
+**Purpose:** A Retrieval-Augmented-Generation (RAG) service to index academic PDFs and answer researcher queries with citations (paper, section, page).
+
+---
+
+## Contents
+- `src/` — FastAPI app (routes, services)
+- `src/services/` — pdf_processor, embedding_service, qdrant_client, rag_pipeline
+- `sample_papers/` — example PDFs (5)
+- `tests/` — optional test scripts
+- `docker-compose.yml` — optional local containers
+- `.env.example` — environment variables template
+- `APPROACH.md` — design notes
+
+---
+
+## Quick setup (Linux / macOS / Windows WSL recommended)
+
+1. Clone repo
+```bash
+git clone https://github.com/YOUR_USERNAME/research-paper-rag-assessment.git
+cd research-paper-rag-assessment

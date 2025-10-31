@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-py"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:Spiderman2002@localhost:5432/upscale"
+}
+
+model Paper {
+  id        String   @id @default(uuid())
+  title     String
+  section   String?
+  page      Int?
+  embedding String?   
+  createdAt DateTime @default(now())
+}
+
+mongodb+srv://<db_username>:odunqE9lJcGZ5lXW@cluster0.futad1v.mongodb.net/
+
+odunqE9lJcGZ5lXW
